@@ -1,0 +1,28 @@
+use bme2;
+show tables;
+create database bme2;
+create table bme2.student3(
+serialnumber int,
+rollnumber int,
+name varchar(20),
+department varchar(20),
+collegename varchar(20),
+place varchar(20)
+);
+drop table bme2.student3;
+use bme1;
+show tables;
+select*from bme2.student3;
+select rollnumber from bme2.student3;
+insert into bme2.student3 values 
+(1,20001,"Deepi","MDE","mec","Rasipuram"),
+(2,20002,"Dhanya","ADE","mec","Rasipuram"),
+(3,20003,"Ramya","ECE","mec","Rasipuram"),
+(4,20004,"Sharmila","EEE","mec","Rasipuram"),
+(5,20005,"sandy","BME","mec","Rasipuram"),
+(6,20006,"Deepika","MDE","mec","Rasipuram"),
+(7,20007,"Dhanush","ADE","mec","Rasipuram"),
+(8,20008,"Reka","ECE","mec","Rasipuram"),
+(9,20009,"Shamya","EEE","mec","Rasipuram"),
+(10,20010,"santhiya","BME","mec","Rasipuram"),
+(11,0,"santhiya","santhiya","santhiya","santhiya");
